@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BelgradeEvents</string>
+    <string name="splach_name">Belgrade Events</string>
+    <string name="title_activity_maps">Events</string>
+    <string name="image_title">Image</string>
+    <string name="fetchingDatafromServer">Loading data...</string>
+    <string name="fetchingDatafromServerImg">Loading images...</string>
+
+</resources>
