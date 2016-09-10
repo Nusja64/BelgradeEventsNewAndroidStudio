@@ -255,8 +255,15 @@ public class BelgradeMapsActivity extends AppCompatActivity implements DataList,
                 else
             {
                 android.location.Location location = mMap.getMyLocation();
-                LatLng loc = new LatLng(location.getLatitude(), location.getLongitude());
-                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(loc,16.0f));
+                if (location!=null){
+                    LatLng loc = new LatLng(location.getLatitude(), location.getLongitude());
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(loc,16.0f));
+                }
+                else
+                {
+                    Toast.makeText(BelgradeMapsActivity.this,"Can not found location".toUpperCase(), Toast.LENGTH_SHORT).show();
+                }
+
                 return true;
             }
 
